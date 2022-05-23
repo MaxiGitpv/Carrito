@@ -1,0 +1,87 @@
+@media only screen and (max-width: 600px) {
+  /* HEADER SECTION */
+
+  .navbar {
+    position: relative;
+    grid-template-columns: repeat(15, 1fr);
+  }
+  .navbar .shoping {
+    display: none;
+  }
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 14/15;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .navbar .menu {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    align-items: center;
+    border-radius: 0px 0px 0px 10px;
+    background: linear-gradient(rgba(16, 16, 16, 0), rgba(16, 16, 16, 0.2)),
+      #edcb54;
+
+    margin-top: 21em;
+    grid-column: 8/13;
+    transform: translate(172%);
+    transition: all 1s;
+  }
+
+  .navbar .menu-toggle {
+    transform: translate(72%);
+  }
+  .navbar .logo {
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3;
+    cursor: pointer;
+  }
+  /* BODY SECTION */
+  .hero h1 {
+    font-size: 3.5em;
+    color: #edcb54;
+    margin: 0;
+  }
+  .hero .info-content {
+    grid-column: 6/8;
+    grid-row: 2/6;
+    color: #fff;
+  }
+  .hero p {
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    width: 160px;
+  }
+  .hero .btn {
+    font-size: 1em;
+    width: 100px;
+    background: none;
+    color: #fff;
+    padding: 5px 9px;
+    border: 1px solid #edcb54;
+    border-radius: 30px;
+  }
+  /* SECOND SECTION MAIN */
+  .services {
+    padding: 50px 30px;
+  }
+  .cards .card:hover {
+    background-color: rgb(172, 171, 171);
+  }
+  .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* FOOTER SECTION */
+  .footer .follow-me {
+    display: none;
+  }
+  .footer .social-network {
+    text-align: center;
+  }
+}

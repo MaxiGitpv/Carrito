@@ -1,0 +1,283 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  max-width: 1080px;
+  margin: 0px auto;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  background-color: #edcb54;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+}
+.navbar .menu {
+  display: flex;
+  grid-column: 4/8;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2b2929;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar .menu-bar {
+  display: none;
+}
+.navbar .shoping {
+  grid-column: 9/10;
+  font-size: 30px;
+}
+
+/* FIRS SECTION MAIN */
+
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.9),
+      rgba(16, 16, 16, 0.1)
+    ),
+    url("./artist.jpg");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.hero .info-content {
+  grid-column: 6/8;
+  grid-row: 2/6;
+  color: #fff;
+}
+.hero h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+.hero h1 {
+  font-size: 7em;
+  color: #edcb54;
+  margin: 0;
+}
+.hero p {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+}
+
+.hero .btn {
+  font-size: 1em;
+  background: none;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #edcb54;
+  border-radius: 30px;
+}
+.hero .btn:hover {
+  background-color: #edcb54;
+  color: #000;
+}
+
+/* SECOND SECTION MAIN */
+.services {
+  padding: 80px 20px;
+}
+.cards {
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+}
+.card:hover {
+  color: #000;
+}
+.card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 2px 5px 3px rgb(60, 60, 60);
+  background-color: #181818;
+  cursor: pointer;
+}
+.card i {
+  font-size: 45px;
+}
+.card .bxl-deezer {
+  color: #edcb54;
+}
+.card .bx-headphone {
+  color: #edcb54;
+}
+.card .bxs-music {
+  color: #edcb54;
+}
+.cards .card:hover {
+  background-color: rgb(172, 171, 171);
+}
+
+/* THRED SECTION MAIN (PARALLAX)*/
+.bg-parallax {
+  position: relative;
+  height: 100%;
+  background-image: url("./img/concert-3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* .overlight {
+  background-color: rgba(0, 0, 0, 0.425);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+/* SHOPPING SECTION */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border: 1px solid blueviolet; */
+}
+
+.wrapper__container {
+  padding: 20px;
+  border: 1px solid #edcb54;
+  border-radius: 15px;
+}
+.wrapper__content > .wrapper__title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #181818;
+  border-radius: 20px;
+  margin: 10px 160px;
+  height: 40px;
+  cursor: pointer;
+}
+.wrapper__content > .wrapper__title:hover {
+  background-color: #edcb54;
+  color: #000;
+}
+.wrapper__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  color: #fff;
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.wrapper__sidebar {
+  padding: 20px;
+  border: 1px solid #edcb54;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+  background-color: #181818;
+  display: grid;
+  height: 80px;
+  color: #fff;
+  align-items: center;
+  padding: 0;
+  grid-template-areas: "listen-online follow-me social-network";
+  position: sticky;
+  bottom: 0;
+}
+
+.footer .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edcb54;
+  padding: 5.5px;
+  color: #000;
+}
+.footer .listen-online .bx {
+  font-size: 1.5em;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.footer .listen-online .bx:hover {
+  color: #fff;
+}
+.footer h2 {
+  cursor: pointer;
+}
+.footer h2:hover {
+  color: #fff;
+}
+
+.footer .follow-me {
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+.footer .follow-me h2 {
+  cursor: pointer;
+}
+.footer .follow-me h2:hover {
+  color: #edcb54;
+}
+.footer .social-network {
+  grid-template-areas: social-network;
+  font-size: 1.3em;
+  text-align: center;
+}
+.footer .social-network .bx {
+  cursor: pointer;
+  color: #edcb54;
+}
+.footer .social-network .bx:hover {
+  color: #ffffff;
+}
+.btn {
+  cursor: pointer;
+}

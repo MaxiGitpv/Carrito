@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./mediaQueries.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800;900&family=Poppins:wght@100&family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="nav-bar">
+      <nav class="navbar">
+        <img src="./img/logo.png" class="logo" alt="Nuestro proyecto" />
+        <div class="menu" id="menu">
+          <a href="#">Home</a>
+          <a href="#">Galery</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="menu-bar" id="menu-bar">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="shoping">
+          <a href="#wrapper-cart"><i class="bx bxs-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!-- BADY -->
+    <main class="wrapper2">
+      <section class="hero">
+        <div class="info-content">
+          <h3>Artist</h3>
+          <h1>Karby Kleian</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit cabittum.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </section>
+      <section class="services">
+        <div class="cards">
+          <div class="card">
+            <i class="bx bxl-deezer"></i>
+            <h2 class="title">
+              Conciertos
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit cabittum.
+            </p>
+          </div>
+          <div class="card">
+            <i class="bx bx-headphone"></i>
+            <h2 class="title">
+              Covers
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit cabittum.
+            </p>
+          </div>
+          <div class="card">
+            <i class="bx bxs-music"></i>
+            <h2 class="title">
+              Musica
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. cabittum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-parallax">
+        <section class="wrapper">
+          <!-- contenido principal -->
+          <div class="wrapper__container">
+            <div class="wrapper__content">
+              <h2 class="wrapper__title">Productos y Servicios</h2>
+
+              <!-- aquí se agregaran los productos -->
+              <div id="wrapper-products" class="wrapper__products"></div>
+            </div>
+          </div>
+
+          <!-- carrito de compras -->
+          <aside class="wrapper__sidebar">
+            <div class="wrapper__sidebar-cart">
+              <h3 class="wrapper__sidebar-cart-title">Carrito</h3>
+
+              <!-- aquí se agregaran los productos al carrito -->
+              <div id="wrapper-cart" class="wrapper__sidebar-cart-items"></div>
+
+              <!-- aquí se mostrará el total del carrito -->
+              <div class="wrapper__sidebar-cart-total">
+                <span class="wrapper__sidebar-cart-total-text">Total:</span>
+                <span id="cart-total" class="wrapper__sidebar-cart-total-price"
+                  >$0</span
+                >
+              </div>
+
+              <!-- botón de pagar -->
+              <div class="wrapper__sidebar-cart-btn">
+                <button id="checkout" class="wrapper__sidebar-cart-btn-link">
+                  <i class="bx bx-shopping-bag"></i>
+                  <span class="wrapper__sidebar-cart-btn-text">Checkout</span>
+                </button>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </section>
+      <!-- FOOTER -->
+
+      <footer class="footer">
+        <div class="listen-online">
+          <i class="bx bx-headphone"></i>
+          <h2>Online Music</h2>
+        </div>
+        <div class="follow-me">
+          <h2>Follow me</h2>
+        </div>
+        <div class="social-network">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+        </div>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
