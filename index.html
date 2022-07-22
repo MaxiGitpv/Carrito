@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/a4fe6caa7e.js" crossorigin="anonymous"></script>
     <title>Static Template</title>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -23,104 +24,228 @@
     <!-- HEADER -->
     <header class="nav-bar">
       <nav class="navbar">
-        <img src="./img/logo.png" class="logo" alt="Nuestro proyecto" />
+        <img src="./img/logo5.png" class="logo" alt="Nuestro proyecto" />
         <div class="menu" id="menu">
-          <a href="#">Home</a>
-          <a href="#">Galery</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a href="#info">Home</a>
+          <a href="#about">Abaout me</a>
+          <a href="#skills">Skills</a>
+          <a href="#proyects">Proyects</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div class="menu-bar" id="menu-bar">
           <i class="bx bx-menu"></i>
         </div>
         <div class="shoping">
-          <a href="#wrapper-cart"><i class="bx bxs-cart"></i></a>
+          <a href="#contact"><i class="bx bxs-cart"></i></a>
         </div>
       </nav>
     </header>
     <!-- BADY -->
-    <main class="wrapper2">
+    <main class="wrapper2" id="info">
       <section class="hero">
-        <div class="info-content">
-          <h3>Artist</h3>
-          <h1>Karby Kleian</h1>
+
+        <div class="container">
+          <div class="box">
+            <div class="spin-container">
+              <div class="shape">
+                <div class="bd"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-content" >  
+          <h3>Front End Developer</h3>
+          <h1>Máximo Perea</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit cabittum.
+            If you are looking for quality service, in the shortest possible time.
           </p>
-          <button class="btn">Read More</button>
+          
+          </div>
+          <button class="btn">Contact me</button>
         </div>
       </section>
-      <section class="services">
+      
+      <section class="services" id="about">
+        <div class="about">
+          <h1>About me</h1>
+        </div>
         <div class="cards">
-          <div class="card">
-            <i class="bx bxl-deezer"></i>
+          <div class="card card1" id="animado">
+            <i class="fa-solid fa-person"></i>
             <h2 class="title">
-              Conciertos
+              As a person
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit cabittum.
+              I’m a good team player, I love people, I’ve got really good people Skills, I like to show up on time for work 
+              I’m a hard worker, and I can be a great asset to your company if you hire me!
             </p>
           </div>
-          <div class="card">
-            <i class="bx bx-headphone"></i>
+          <div class="card card2" id="animado2">
+            <i class="fa-solid fa-audio-description"></i>
             <h2 class="title">
-              Covers
+              Auto Description
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit cabittum.
+              I describe myself as a good person
+              I am a person committed to my work, I have innovative ideas, I like challenges and new projects that the company where I intend to work could propose me;
             </p>
           </div>
-          <div class="card">
-            <i class="bx bxs-music"></i>
+          <div class="card card3" id="animado3">
+            <i class="fa-solid fa-laptop-code"></i>
             <h2 class="title">
-              Musica
+              Working
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. cabittum.
+              I have the ability to relate to people, I like to work in coordination with the different head offices, I have no problems working under pressure, I like to face the obstacles that arise and my mission in all jobs is to achieve the objectives of the company and my team.
             </p>
           </div>
         </div>
       </section>
-      <section class="bg-parallax">
+      <section class="bg-parallax" id="skills">
         <section class="wrapper">
           <!-- contenido principal -->
           <div class="wrapper__container">
             <div class="wrapper__content">
-              <h2 class="wrapper__title">Productos y Servicios</h2>
+              <h2 class="wrapper__title">Technical skills</h2>
+            </div>
+            <section class="hability" id="hability">
+              <div class="container5">
+                <div class="habilidades">
+                  
+                  <i class="fa-brands fa-react"></i>
+                    <span>55%</span>
+                    <div class="cajita">
+                      <div class="bar">
+                        <div class="bar-size web" id="web"></div>
+                      </div>
+                    </div>
 
-              <!-- aquí se agregaran los productos -->
-              <div id="wrapper-products" class="wrapper__products"></div>
+                  <i class="fa-brands fa-node-js"></i>
+                    <span>45%</span>
+                    <div class="bar">
+                      <div class="node bar-size" id="node"></div>
+                    </div>
+
+                  <i class="fa-brands fa-js"></i>
+                    <span>65%</span>
+                    <div class="bar">
+                      <div class="interaction bar-size"></div>
+                    </div>
+
+                  <i class="fa-brands fa-html5"></i>
+                    <span>85%</span>
+                    <div class="bar">
+                      <div class="ux bar-size"></div>
+                    </div>
+
+                  <i class="fa-brands fa-css3-alt"></i>
+                    <span>75%</span>
+                    <div class="bar">
+                      <div class="framework bar-size"></div>
+                    </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="studies-container">
+          <div class="container1">
+            <h1>Studies</h1>
+          </div>
+          <div class="estudios">
+            <div class="estudio1">
+              <img src="./img/Tec.png" alt="Tec de Monterrey" />
+              <h3><span>System technique</span></h3>
+              <p>2014-2017 Systems Engineering</p>
+            </div>
+            <div class="estudio2">
+              <img src="./img/logo_academlo.png" alt="Academlo" />
+              <h3><span>Academlo</span></h3>
+              <p>May-2022 Full Stack Developer</p>
             </div>
           </div>
-
-          <!-- carrito de compras -->
-          <aside class="wrapper__sidebar">
-            <div class="wrapper__sidebar-cart">
-              <h3 class="wrapper__sidebar-cart-title">Carrito</h3>
-
-              <!-- aquí se agregaran los productos al carrito -->
-              <div id="wrapper-cart" class="wrapper__sidebar-cart-items"></div>
-
-              <!-- aquí se mostrará el total del carrito -->
-              <div class="wrapper__sidebar-cart-total">
-                <span class="wrapper__sidebar-cart-total-text">Total:</span>
-                <span id="cart-total" class="wrapper__sidebar-cart-total-price"
-                  >$0</span
-                >
-              </div>
-
-              <!-- botón de pagar -->
-              <div class="wrapper__sidebar-cart-btn">
-                <button id="checkout" class="wrapper__sidebar-cart-btn-link">
-                  <i class="bx bx-shopping-bag"></i>
-                  <span class="wrapper__sidebar-cart-btn-text">Checkout</span>
-                </button>
-              </div>
-            </div>
-          </aside>
         </section>
       </section>
+      <section class="proyects-container" id="proyects">
+        <div class="proyects-about">
+          <h1>Proyects</h1>
+        </div>
+        
+        <div class="content-all" id="content-all">
+          
+          <div class="content-img" id="img1">
+              <a href="#img5" class="bx bxs-chevron-left"></a>
+              <img src="./img/e-commerce-fre.PNG" alt="ecommerce">
+              <a href="#img2" class="bx bxs-chevron-right" ></a>
+              <div  class="content-details" id="caja1">
+                  <h1>E-commerce CGS</h1>
+                  <p>Esta es una pagina bastante optima, desarrollada con framework, Woocommerce, 
+                    backend y manipulacion de base de datos MSQL</p>
+                    <a href="https://www.comprayganasaldos.com" target="_blank" class="btn-hover">Visitar</a>>
+              </div>
+          </div>
+          <div class="content-img" id="img2">
+              <a href="#img1" class="bx bxs-chevron-left"></a>
+              <img src="./img/E-commerce.PNG" alt="ecommerce">
+              <a href="#img3" class="bx bxs-chevron-right" ></a>
+              <div class="content-details" id="caja2">
+                <h1>E-commerce academlo</h1>
+                <p>Tienda funcional de productos con APIREST e interfax de usuario </p>
+                <a href="https://firststoreapp.netlify.app" target="_blank" class="btn-hover">Visitar</a>
+              </div>
+          </div>
+          <div class="content-img" id="img3">
+              <a href="#img2" class="bx bxs-chevron-left"></a>
+              <img src="./img/pokemons.PNG" alt="pokemons">
+              <a href="#img4" class="bx bxs-chevron-right" ></a>
+              <div class="content-details" id="caja3">
+                <h1>POKEDEX</h1>
+                <p>Una aplicacion web para pokemones, con capacidad de brindarte toda 
+                  la informacion del pokemon que desees</p>
+                  <a href="https://apppokemonapi.netlify.app" target="_blank" class="btn-hover">Visitar</a>
+              </div>
+          </div>
+          <div class="content-img" id="img4">
+              <a href="#img3" class="bx bxs-chevron-left"></a>
+              <img src="./img/RickAndMorty.PNG" alt="rickandmorty">
+              <a href="#img5" class="bx bxs-chevron-right" ></a>
+              <div class="content-details" id="caja4">
+                <h1>Rick And Morty</h1>
+                <p>API REST con la serie animada de Rick and morty, donde encontraremos
+                   todos los personajes y sus caracteristicas</p>
+                   <a href="https://rickandmorty22.netlify.app" target="_blank" class="btn-hover">Visitar</a>
+              </div>
+          </div>
+          <div class="content-img" id="img5">
+              <a href="#img4" class="bx bxs-chevron-left"></a>
+              <img src="./img/UserApp.PNG" alt="ecommerce">
+              <a href="#img1" class="bx bxs-chevron-right" ></a>
+              <div class="content-details" id="caja5" >
+                <h1>User App</h1>
+                <p>API REST con interfax de usuarios, usando el modelo CRUD para manejar la base de datos</p>
+                <a href="https://firstusersapp.netlify.app" target="_blank" class="btn-hover">Visitar</a>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container__form"" >
+              <h1>Contact</h1>
+              <form action="https://formspree.io/f/xnqwezeg"
+                method="POST" class="form" id="contact" >
+                <h2 class="form__title">¿Would you like to be a part of creating amazing products?</h2>
+                <div class="form__container">
+                  <input type="text" class="form__input" placeholder="Name:" name="name">
+                  <input type="email" class="form__input" placeholder="Email:" name="_replyto">
+                  <textarea class="form__input form__input--message" placeholder="Message:" name="message"></textarea>
+
+                  <input type="submit" value="Send" class="form_cta">
+                </div>
+              </form>
+      </section>
+
       <!-- FOOTER -->
 
       <footer class="footer">
