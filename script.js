@@ -52,9 +52,9 @@ observador.observe(caja4);
 observador.observe(caja5);
 observador.observe(caja6);
 
-observador2.observe(caja1);
-observador2.observe(caja2);
-growing
+observador2.observe(caja7);
+observador2.observe(caja8);
+
 
 //  OPEN MENU-BAR
 
