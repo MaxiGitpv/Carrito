@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding: 0;
+  padding-right: 0;
   font-family: "Roboto", sans-serif;
   max-width: 1080px;
   margin: 0px auto;
@@ -21,6 +21,7 @@ body {
 .nav-bar {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .navbar {
@@ -28,8 +29,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   align-items: center;
-  position:sticky;
-  top: 0;
+  
 }
 .navbar .menu {
   display: flex;
@@ -234,10 +234,10 @@ body {
   padding: 10px 5px;
   border: 1px solid #edcb54;
   border-radius: 30px;
-  animation-name: jomp;
-  animation-duration: 4s;
+  /* animation-name: jomp;
+  animation-duration: 4s; */
   grid-column: 12/15;
-  grid-row: 9/10;
+  grid-row: 11/12;
   margin-top: 20px;
   text-align: center;
   text-decoration-line: none;
@@ -285,11 +285,13 @@ body {
   align-items: center; 
   gap: 25px;
   background-color: #2b2929;
+  overflow: hidden;
 }
 .cards {
   display: flex;
   gap: 1rem;
   color: #fff;
+  
 }
 .card:hover {
   color: #000;
@@ -303,6 +305,7 @@ body {
   cursor: pointer;
   
 }
+
 .card.card1, 
 .card.card2, 
 .card.card3 {
@@ -316,6 +319,7 @@ body {
 .card.card3.visible {
   opacity: 1;
   transform: scale(1);
+  transition: .7s ease-in-out;
 }
 
 
@@ -375,7 +379,7 @@ body {
 .wrapper__content {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   
 }
 .wrapper__content > .wrapper__title {
@@ -683,6 +687,7 @@ body {
   align-items: center; 
   gap: 25px;
   background-color: #2b2929;
+  overflow: hidden;
 }
 .proyects-about{
   display: flex;
@@ -708,7 +713,6 @@ body {
   display: flex;
   margin: auto;
   margin-top: 5%;
-  overflow: hidden;
   perspective: 800px;
   box-shadow: 0 20px 40px 0 #edcb54;
   border-radius: 5px;
@@ -728,8 +732,9 @@ body {
   position:absolute;
   top: 0px;
   left:0px;
-  transform: translateX(-100%) rotateY(360deg);
+  transform: translateX(-100%) rotateX(360deg);
   opacity: 0;
+  z-index: 1;
   
 }
 
@@ -738,7 +743,7 @@ body {
   opacity: 1;
 }
 .content-img:target {
-  transform: translateX(0) rotateY(0deg);
+  transform: translateX(0) rotateX(0deg);
   opacity: 1;
 }
 
@@ -821,11 +826,11 @@ body {
   transform: scale(0.9);
   transition: .7s ease-in-out all;
 }
-.contact.visible {
+/* .contact.visible {
   opacity: 1;
   transform: scale(1);
   
-}
+} */
 
 .container__form{
   background-image: url(./img/smarphone2.jpg);

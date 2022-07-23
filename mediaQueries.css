@@ -1,12 +1,16 @@
 @media only screen and (max-width: 600px) {
   /* HEADER SECTION */
-  .body {
-    overflow:hidden;
+  body {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    margin: 0px auto;
+    overflow-wrap:  hidden;
   }
+  
   .navbar {
     position: relative;
     grid-template-columns: repeat(15, 1fr);
-
+    z-index: 1;
   }
   .navbar .shoping {
     display: none;
@@ -57,7 +61,7 @@
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-column: 4/14;
+    grid-column: 3/13;
     grid-row: 2/5;
   }
 
@@ -82,9 +86,9 @@
 
   .hero .info-content {
     grid-column: 5/12;
-    grid-row: 6/13;
+    grid-row: 7/11;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .hero p {
     font-weight: 300;
@@ -109,7 +113,7 @@
     padding: 50px 30px;
   }
   .cards .card:hover {
-    background-color: rgb(172, 171, 171);
+    background-color: rgb(228, 13, 13);
   }
   .cards {
     display: flex;
@@ -128,9 +132,8 @@
   .wrapper__content {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 10px;
-    background-color: #edcb54;
   }
   .wrapper__content > .wrapper__title {
     padding: 35px 25px;
