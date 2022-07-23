@@ -1,9 +1,12 @@
 @media only screen and (max-width: 600px) {
   /* HEADER SECTION */
-
+  .body {
+    overflow:hidden;
+  }
   .navbar {
     position: relative;
     grid-template-columns: repeat(15, 1fr);
+
   }
   .navbar .shoping {
     display: none;
@@ -29,7 +32,7 @@
 
     margin-top: 25em;
     grid-column: 10/16;
-    transform: translateY(-110%);
+    transform: translateY(-112%);
     transition: all 1s;
   }
 
