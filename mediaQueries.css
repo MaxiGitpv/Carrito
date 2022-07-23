@@ -28,13 +28,13 @@
       #edcb54;
 
     margin-top: 25em;
-    grid-column: 6/12;
-    transform: translate(172%);
+    grid-column: 10/16;
+    transform: translateY(-110%);
     transition: all 1s;
   }
 
   .navbar .menu-toggle {
-    transform: translate(72%);
+    transform: translateY(2%);
   }
   .navbar .logo {
     width: 90px;
