@@ -7,9 +7,8 @@ const caja4 = document.getElementById('hability');
 const caja5 = document.getElementById('content-all');
 const caja6 = document.getElementById('contact');
 
-
-const caja7 = document.getElementById('web');
-const caja8 = document.getElementById('node');
+// const caja7 = document.getElementById('web');
+// const caja8 = document.getElementById('node');
 
 
 const cargarcaja = (entradas, observador) => {
@@ -22,24 +21,9 @@ const cargarcaja = (entradas, observador) => {
       }
     });
 }
-const cargarcaja2 = (entradas, observador) => {
 
-    entradas.forEach((entrada) => {
-      if(entrada.isIntersecting) {
-        entrada.target.classList.add('growing');
-      } else {
-        entrada.target.classList.remove('growing');
-      }
-    });
-}
 
 const observador = new IntersectionObserver(cargarcaja, {
-  root: null,
-  rootMargin: '0px 0px 0px 0px',
-  threshold: 1.0
-});
-
-const observador2 = new IntersectionObserver(cargarcaja2, {
   root: null,
   rootMargin: '0px 0px 0px 0px',
   threshold: 1.0
@@ -52,8 +36,31 @@ observador.observe(caja4);
 observador.observe(caja5);
 observador.observe(caja6);
 
-observador2.observe(caja7);
-observador2.observe(caja8);
+
+
+// const cargarcaja2 = (entradas, observador) => {
+
+//     entradas.forEach((entrada) => {
+//       if(entrada.isIntersecting) {
+//         entrada.target.classList.add('growing');
+//       } else {
+//         entrada.target.classList.remove('growing');
+//       }
+//     });
+// }
+
+// const observador2 = new IntersectionObserver(cargarcaja2, {
+//   root: null,
+//   rootMargin: '0px 0px 0px 0px',
+//   threshold: 1.0
+// });
+
+// observador2.observe(caja7);
+// observador2.observe(caja8);
+
+
+
+
 
 
 //  OPEN MENU-BAR

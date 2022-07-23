@@ -219,6 +219,14 @@
     border-radius: 5px;
   }
 
+  /* PROYECTOS */
+  .content-all.visible {
+    opacity: 1;
+          transform: scale(0.9); 
+  }
+  
+
+
   /* CONTACTO */
   .form {
     background-color:none;
