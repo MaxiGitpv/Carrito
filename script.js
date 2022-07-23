@@ -3,9 +3,9 @@
 const caja1 = document.getElementById('animado');
 const caja2 = document.getElementById('animado2');
 const caja3 = document.getElementById('animado3');
-const caja4 = document.getElementById('hability');
-const caja5 = document.getElementById('content-all');
-const caja6 = document.getElementById('contact');
+// const caja4 = document.getElementById('hability');
+// const caja5 = document.getElementById('content-all');
+// const caja6 = document.getElementById('contact');
 
 // const caja7 = document.getElementById('web');
 // const caja8 = document.getElementById('node');
@@ -32,9 +32,9 @@ const observador = new IntersectionObserver(cargarcaja, {
 observador.observe(caja1);
 observador.observe(caja2);
 observador.observe(caja3);
-observador.observe(caja4);
-observador.observe(caja5);
-observador.observe(caja6);
+// observador.observe(caja4);
+// observador.observe(caja5);
+// observador.observe(caja6);
 
 
 

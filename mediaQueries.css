@@ -141,6 +141,7 @@
   .container5 {
     display: flex;
     justify-content: center;
+    padding: 10px;
   }
   .bar {
     position: inherit;
@@ -205,6 +206,7 @@
     justify-content: center;
     align-items: center;
     width: 480px;
+    padding: 10px;
   }
   .content-all {
     width: 440px;
@@ -219,6 +221,9 @@
     border-radius: 5px;
   }
 
+  .fa-brands {
+    padding-left: 10px;
+  }
   /* PROYECTOS */
   .content-all.visible {
     opacity: 1;
