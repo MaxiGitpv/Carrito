@@ -1,4 +1,14 @@
-// entras
+//  OPEN MENU-BAR
+
+let menu = document.querySelector("#menu");
+let menu_bar = document.querySelector("#menu-bar");
+
+menu_bar.addEventListener("click", function () {
+  menu.classList.toggle("menu-toggle");
+});
+
+
+// ENTRADAS
 
 const caja1 = document.getElementById('animado');
 const caja2 = document.getElementById('animado2');
@@ -60,17 +70,26 @@ observador.observe(caja3);
 
 
 
+// GALERY
 
+// const numero = 1;
 
+// function adelantar()
+// {
+//   numero++;
+//   if (numero > 5)  
+//     numero=1;
+//     var foto = document.getElementById("foto");
+//     foto.src="img/image/foto" + numero + ".png";
+  
+// }
 
-//  OPEN MENU-BAR
-
-let menu = document.querySelector("#menu");
-let menu_bar = document.querySelector("#menu-bar");
-
-menu_bar.addEventListener("click", function () {
-  menu.classList.toggle("menu-toggle");
-});
-
-
-// SHOPPING SECTION
+// function retroceder()
+// {
+//   numero--;
+//   if (numero <1) 
+//     numero=5;
+//     var foto = document.getElementById("foto");
+//     foto.src="img/image/foto" + numero + ".png";
+  
+// }

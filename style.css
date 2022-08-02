@@ -19,8 +19,8 @@ body {
 }
 
 .nav-bar {
-  position: sticky;
-  top: 0;
+  position:sticky;
+  top: 0px;
   z-index: 1;
 }
 
@@ -687,7 +687,6 @@ body {
   align-items: center; 
   gap: 25px;
   background-color: #2b2929;
-  overflow: hidden;
 }
 .proyects-about{
   display: flex;
@@ -710,13 +709,14 @@ body {
   width: 702px;
   height: 470px;
   position:relative;
+  overflow: hidden;
   display: flex;
   margin: auto;
   margin-top: 5%;
   perspective: 800px;
   box-shadow: 0 20px 40px 0 #edcb54;
   border-radius: 5px;
-  transform: scale(0.9);
+  transform: scale(1);
   opacity: 1;
   transition: .7s ease-in-out all;
 }
@@ -730,12 +730,15 @@ body {
   width: 100%;
   height: 100%;
   position:absolute;
+  perspective: 800px;
   top: 0px;
   left:0px;
   transform: translateX(-100%) rotateX(360deg);
+  transition: all 1s;
   opacity: 0;
-  z-index: 1;
-  
+  overflow: hidden;
+
+
 }
 
 #img1 {
@@ -743,9 +746,10 @@ body {
   opacity: 1;
 }
 .content-img:target {
+  opacity: 1; 
   transform: translateX(0) rotateX(0deg);
-  opacity: 1;
 }
+
 
 .content-img img{
   width: 100%;
@@ -819,6 +823,37 @@ body {
   background-color: rgba(196, 184, 184, 0.5);
 }
 
+/* GALERY */
+
+/* .galery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 50px;
+  gap: 30px;
+  background-color: #09a51e
+
+}
+
+#btnadelante{
+  aspect-ratio: 1;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#btnatras{ 
+  aspect-ratio: 1;
+  width: 40px;
+  height: 40px; 
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+} */
 
 /* CONTACT */
 .contact {

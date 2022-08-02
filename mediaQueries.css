@@ -113,8 +113,9 @@
     padding: 50px 30px;
   }
   .cards .card:hover {
-    background-color: rgb(228, 13, 13);
+    background-color: rgb(172, 171, 171);
   }
+  
   .cards {
     display: flex;
     gap: 1rem;
