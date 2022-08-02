@@ -618,6 +618,25 @@ body {
   border-radius: 10px;
 }
 
+.download{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.btn-descarga{
+  text-decoration: none;
+  background-color: #06229c;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #edcb54;
+}
+.btn-descarga:hover{
+  background-color: #85857b;
+  color: #000;
+}
+
+
 /* ESTUDIOS */
 
 .studies-container{
