@@ -216,7 +216,7 @@
     padding: 10px;
   }
   .content-all {
-    width: 440px;
+    width: 405px;
     height: 300px;
     position: inherit;
     display: flex;
@@ -232,6 +232,17 @@
     padding-left: 10px;
   }
   /* PROYECTOS */
+
+  .proyects-container {
+    padding: 80px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 25px;
+    background-color: #2b2929;
+  }
+
   .content-all.visible {
     opacity: 1;
           transform: scale(0.9); 
